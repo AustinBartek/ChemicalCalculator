@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chemical Calculator!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculations.js" defer></script>
+</head>
+
+<body>
+    <div class="calcMenu">
+
+        <p id="titleText">Chemical Calculator</p>
+        <br>
+
+        <div class="selectMenu">
+        <label class="labelText"><u>Select Area</u>: </label>
+        <select class="labelText" id="areaSelector">
+            <option value="mailbox">Mailbox</option>
+            <option value="frontwest">Frontyard West</option>
+            <option value="frontnorth">Frontyard North</option>
+            <option value="driveway">Driveway</option>
+            <option value="drivewaycorner">Driveway Corner</option>
+            <option value="backsouth">Backyard South</option>
+            <option value="backeast">Backyard East</option>
+            <option value="backnorth">Backyard North</option>
+            <option value="northside">North Side</option>
+        </select>
+        </div>
+
+        <div class="selectMenu">
+        <label class="labelText"><u>Select Chemical</u>: </label>
+        <select class="labelText" id="chemSelector">
+            <option value="nitrogen">Nitrogen</option>
+            <option value="phosphorous">Phosphorous</option>
+            <option value="potassium">Potassium</option>
+        </select>
+        </div>
+
+        <div class="selectMenu">
+            <label class="labelText"><u>Select Test Result</u>: </label>
+            <select class="labelText" id="resultSelector">
+                <option value="verylow">Very Low</option>
+                <option value="low">Low</option>
+                <option value="mediumlow">Medium Low</option>
+                <option value="medium">Medium</option>
+                <option value="medium high">Medium High</option>
+                <option value="high">High</option>
+                <option value="veryhigh">Very High</option>
+            </select>
+        </div>
+
+        <div class="selectMenu">
+            <label class="labelText"><u>Input Chemical Strength</u>: </label>
+            <input class="labelText" id="strengthInput" placeholder="Strength" value="1">
+        </div>
+
+        <button class="calcButton" onclick="getCalculation()">Calculate!</button>
+
+        <div id="calcDisplay">
+            <div>
+            <label class="labelText">Result: </label>
+            <p id="resultText">N/A</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
